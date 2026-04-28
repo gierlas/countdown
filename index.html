@@ -1,46 +1,69 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #222;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: background-image 0.5s;
-        }
-        #countdown-container {
-            text-align: center;
-            background: rgba(0,0,0,0.5);
-            padding: 2rem 3rem;
-            border-radius: 1rem;
-        }
-        .countdown {
-            font-size: 2.5rem;
-            margin: 1rem 0;
-        }
-        select {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<title id="page-title">Fernetcito Countdown</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Trebuchet MS', sans-serif;
+        color: white;
+        text-align: center;
+        background: url('https://img1.picmix.com/output/pic/normal/7/1/1/8/4678117_d4272.gif') no-repeat center center/cover;
+    }
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.55);
+    }
+
+    .content {
+        position: relative;
+    }
+
+    .countdown {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #aee6ff;
+        text-shadow:
+            0 0 10px #00cfff,
+            0 0 20px #00cfff,
+            0 0 40px rgba(0, 200, 255, 0.7);
+    }
+
+    .label {
+        margin-top: 15px;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        color: white;
+        text-shadow:
+            0 0 10px #ffffff,
+            0 0 20px #aee6ff,
+            0 0 30px rgba(255,255,255,0.6);
+    }
+
+    .emoji {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+</style>
 </head>
 <body>
-    <div id="countdown-container">
-        <!-- Countdown selection is now based on the query string -->
-        <div id="target-time" style="margin-bottom:1rem;"></div>
-        <div id="countdown" class="countdown"></div>
-    </div>
-    <script src="script.js"></script>
+<div class="overlay"></div>
+
+<div class="content">
+    <div class="countdown" id="countdown"></div>
+    <div class="label" id="label">FERNETCITO 🍹🇦🇷</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
