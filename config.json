@@ -1,9 +1,7 @@
 {
-    "countdown1": {
-        "date": "2026-12-31T23:59:59Z",
-        "image": "fernet-branca.gif"
-    },
-    "countdown2": {
-        "date": "2027-06-01T12:00:00Z"
+    "fernet": {
+        "date": "2026-04-28T19:00:00Z",
+        "image": "fernet-branca.gif",
+        "title": "Fernetcito!"
     }
 }
